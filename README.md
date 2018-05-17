@@ -4,12 +4,12 @@ Extended JSON encoder for Python data structures.
 
 A subclass of [JSONEncoder](https://docs.python.org/3/library/json.html#json.JSONEncoder), it handles these additional types:
 
-- `datetime.datetime` — A string of the form `YYYY-MM-DDTHH:mm:ss.sssZ` or `YYYY-MM-DDTHH:mm:ss.sss+HH:MM` as defined in [ECMA-262](https://www.ecma-international.org/ecma-262/5.1/#sec-15.9.1.15).
-- `datetime.date` — A string of the form `YYYY-MM-DD` as defined in [ECMA-262](https://www.ecma-international.org/ecma-262/5.1/#sec-15.9.1.15).
-- `datetime.time` — A string of the form `HH:MM:ss.sss` as defined in [ECMA-262](https://www.ecma-international.org/ecma-262/5.1/#sec-15.9.1.15).
-- `datetime.timedelta` - A string representing a duration as defined in [ISO-8601](https://www.iso.org/iso-8601-date-and-time-format.html). For example, `timedelta(days=1, hours=2, seconds=3.4)` is represented as `P1DT02H00M03.400000S`.
-- `decimal.Decimal`, `uuid.UUID` — A string representation of the object.
-- `enum.Enum` — A `.value` property of enum member.
+- `datetime.datetime` — a string of the form `YYYY-MM-DDTHH:mm:ss.sssZ` or `YYYY-MM-DDTHH:mm:ss.sss+HH:MM` as defined in [ECMA-262](https://www.ecma-international.org/ecma-262/5.1/#sec-15.9.1.15).
+- `datetime.date` — a string of the form `YYYY-MM-DD` as defined in [ECMA-262](https://www.ecma-international.org/ecma-262/5.1/#sec-15.9.1.15).
+- `datetime.time` — a string of the form `HH:MM:ss.sss` as defined in [ECMA-262](https://www.ecma-international.org/ecma-262/5.1/#sec-15.9.1.15).
+- `datetime.timedelta` - a string representing a duration as defined in [ISO-8601](https://www.iso.org/iso-8601-date-and-time-format.html). For example, `timedelta(days=1, hours=2, seconds=3.4)` is represented as `P1DT02H00M03.400000S`.
+- `decimal.Decimal`, `uuid.UUID` — a string representation of the object.
+- `enum.Enum` — a `.value` property of enum member.
 
 ## Installation
 

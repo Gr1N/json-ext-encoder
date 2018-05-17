@@ -1,0 +1,23 @@
+sudo: false
+
+language: python
+
+matrix:
+  include:
+    - python: 3.6
+      env: TOXENV=py36-isort
+    - python: 3.6
+      env: TOXENV=py36-flake8
+    - python: 3.6
+      env: TOXENV=py36-mypy
+    - python: 3.6
+      env: TOXENV=py36-tests
+
+install:
+  - pip install codecov tox
+
+script:
+  - tox
+
+after_success:
+  - codecov

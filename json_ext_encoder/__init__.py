@@ -1,1 +1,3 @@
-from .encoder import JSONEncoder  # noqa: F401
+from .encoder import JSONEncoder
+
+__all__ = ("JSONEncoder",)

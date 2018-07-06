@@ -4,14 +4,9 @@ import enum
 import json
 import uuid
 
-from json_ext_encoder import (
-    duration,
-    timezone,
-)
+from json_ext_encoder import duration, timezone
 
-__all__ = (
-    'JSONEncoder',
-)
+__all__ = ("JSONEncoder",)
 
 
 class JSONEncoder(json.JSONEncoder):
@@ -20,14 +15,14 @@ class JSONEncoder(json.JSONEncoder):
             r = o.isoformat()
             if o.microsecond:
                 r = r[:23] + r[26:]
-            if r.endswith('+00:00'):
-                r = r[:-6] + 'Z'
+            if r.endswith("+00:00"):
+                r = r[:-6] + "Z"
             return r
         elif isinstance(o, datetime.date):
             return o.isoformat()
         elif isinstance(o, datetime.time):
             if timezone.is_aware(o):
-                raise ValueError('JSON can\'t represent timezone-aware times.')
+                raise ValueError("JSON can't represent timezone-aware times.")
             r = o.isoformat()
             if o.microsecond:
                 r = r[:12]

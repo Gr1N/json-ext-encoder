@@ -1,13 +1,9 @@
-Changelog for json-ext-encoder
-==============================
+# Changelog for json-ext-encoder
 
-0.1.1 (unreleased)
-------------------
+## 0.1.1 (unreleased)
 
-- Nothing changed yet.
+- Python 3.7 support
 
-
-0.1.0 (2018-05-17)
-------------------
+## 0.1.0 (2018-05-17)
 
 - Initial implementation. Supported types: `datetime.datetime`, `datetime.date`, `datetime.time`, `datetime.timedelta`, `decimal.Decimal`, `uuid.UUID` and `enum.Enum`.

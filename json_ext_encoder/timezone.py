@@ -1,12 +1,7 @@
-from datetime import (
-    datetime,
-    time,
-)
+from datetime import datetime, time
 from typing import Union
 
-__all__ = (
-    'is_aware',
-)
+__all__ = ("is_aware",)
 
 
 def is_aware(value: Union[datetime, time]) -> bool:

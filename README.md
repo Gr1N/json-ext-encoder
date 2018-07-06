@@ -22,15 +22,20 @@ A subclass of [JSONEncoder](https://docs.python.org/3/library/json.html#json.JSO
 
     json.dumps({...}, cls=JSONEncoder)
 
-## Testing and linting
+## Contributing
 
-For testing and linting install [tox](http://tox.readthedocs.io):
+To work on the `json-ext-encoder` codebase, you'll want to clone the project locally and install the required dependencies via [poetry](https://poetry.eustace.io):
 
-    $ pip install tox
+    $ git clone git@github.com:Gr1N/json-ext-encoder.git
+    $ poetry install
 
-...and run:
+To run tests and linters use command below:
 
-    $ tox
+    $ poetry run tox
+
+If you want to run only tests or linters you can explicitly specify which test environment you want to run, e.g.:
+
+    $ poetry run tox -e py37-tests
 
 ## License
 

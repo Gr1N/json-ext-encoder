@@ -1,6 +1,6 @@
 # Changelog for json-ext-encoder
 
-## 0.1.1 (unreleased)
+## 0.2.0 (unreleased)
 
 - Python 3.7 support
 

@@ -16,3 +16,38 @@ exclude = '''
   | dist
 )/
 '''
+
+[tool.poetry]
+name = "json-ext-encoder"
+version = "0.2.0-alpha.0"
+description = "Extended JSON encoder for Python data structures"
+authors = [
+    "Nikita Grishko <gr1n@protonmail.com>"
+]
+license = "MIT"
+
+readme = "README.md"
+
+homepage = "https://github.com/Gr1N/json-ext-encoder"
+repository = "https://github.com/Gr1N/json-ext-encoder"
+
+keywords = ["json", "encoder", "serialization"]
+
+classifiers = [
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+black = "*"
+flake8 = "*"
+flake8-bugbear = "*"
+isort = "*"
+iso8601 = "*"
+mypy = "*"
+pytest = "*"
+pytest-cov = "*"
+python-dateutil = "*"
+tox = "^3.0.0"
